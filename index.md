@@ -12,4 +12,4 @@ My Journey is somehow starting. No idea how that happened.
     <a href="https://github.com/jm1021/john_2025">
         <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
     </a>
-## About Me
+ ## About Me
