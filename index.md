@@ -5,4 +5,4 @@ description: Home Page
 hide: true
 ---
 
-My journey starts here.
+My Journey is already ending and I haven't even started. Thats depressing.
