@@ -5,4 +5,5 @@ description: Home Page
 hide: true
 ---
 
-My Journey is already ending and I haven't even started. Thats depressing.
+My Journey is somehow starting. No idea how that happened.
+
