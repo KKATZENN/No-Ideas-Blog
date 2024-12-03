@@ -9,7 +9,8 @@ My Journey is somehow starting. No idea how that happened.
 
 ## Coding Tools
 
-<img> src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Logo_of_Github.jpg?20230410211349" alt="File:Logo of Github.jpg"" width="200" height="200" </img>
+<img src="[https://upload.wikimedia.org/wikipedia/commons/f/ff/Logo_of_Github.jpg?20230410211349](https://upload.wikimedia.org/wikipedia/commons/f/ff/Logo_of_Github.jpg?20230410211349)" alt="File:Logo of Github.jpg" width="200" height="200"> 
+</img>
 
 
 ## About Me
