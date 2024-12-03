@@ -15,6 +15,8 @@ My Journey is somehow starting. No idea how that happened.
 ## About Me
 My name is Paul Yue.
 I have 8 animals; 3 dogs and 5 cats
-Orange Tabby Cat Beside Fawn Short-coated Puppy-46024.jpeg
+<a>
+<img src=https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Orange_Tabby_Cat_Beside_Fawn_Short-coated_Puppy-46024.jpeg/800px-Orange_Tabby_Cat_Beside_Fawn_Short-coated_Puppy-46024.jpeg?20180708235900>
+</a>
 
 ## Games
