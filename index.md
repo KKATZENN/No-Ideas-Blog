@@ -14,7 +14,7 @@ img {
   border: 3px solid black;
   border-radius: 20%
   }
-/>
+/img>
 
 
 ## About Me
