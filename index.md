@@ -10,7 +10,6 @@ My Journey is somehow starting. No idea how that happened.
 ## Coding Tools
 
   <a href="https://github.com/KKATZENN/No-Ideas-Blog">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Logo_of_Github.jpg?20230410211349=&download=">
   </a>
 
 ## About Me
