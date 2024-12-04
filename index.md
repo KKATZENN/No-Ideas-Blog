@@ -12,7 +12,7 @@ My Journey is somehow starting. No idea how that happened.
   <a href="https://github.com/KKATZENN/No-Ideas-Blog">
     <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Logo_of_Github.jpg?20230410211349https://upload.wikimedia.org/wikipedia/commons/f/ff/Logo_of_Github.jpg?20230410211349https://upload.wikimedia.org/wikipedia/commons/f/ff/Logo_of_Github.jpg?20230410211349">
   </a>
-![Logo_of_Github](https://github.com/user-attachments/assets/29a2f706-7556-4424-9c73-ce8e5dff0d49)
+
 
 ## About Me
 My name is Paul Yue.
@@ -29,7 +29,7 @@ Here are some fun facts about me!
   <a>
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Orange_Tabby_Cat_Beside_Fawn_Short-coated_Puppy-46024.jpeg/800px-Orange_Tabby_Cat_Beside_Fawn_Short-coated_Puppy-46024.jpeg?20180708235900">
   </a>
-  
+  <img> src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Logo_of_Github.jpg?20230410211349=&download=" </img>
 I am half chinese and half vietnamese.
 
 ## Code
