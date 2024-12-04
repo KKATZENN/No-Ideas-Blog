@@ -17,15 +17,13 @@ My Journey is somehow starting. No idea how that happened.
 My name is Paul Yue.
 Here are some fun facts about me!
 
-<li>
-  <ul>
-    I have 8 animals; 3 dogs and 5 cats
-    My favorite food is Tonkatsu Curry
-    My favorite number is 9
-    I love anime
-    Namjun Hyung is legally my father-in-law
-  </ul>
-</li>
+<ul>
+  <li>I have 8 animals; 3 dogs and 5 cats</li>
+  <li>My favorite food is Tonkatsu Curry</li>
+  <li>My favorite number is 9</li>
+  <li>I love anime</li>
+  <li>Namjun Hyung is legally my father-in-law</li>
+</ul>
 
   <a>
     <img src=https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Orange_Tabby_Cat_Beside_Fawn_Short-coated_Puppy-46024.jpeg/800px-Orange_Tabby_Cat_Beside_Fawn_Short-coated_Puppy-46024.jpeg?20180708235900>
