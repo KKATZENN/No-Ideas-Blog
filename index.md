@@ -8,7 +8,8 @@ hide: true
 My Journey is somehow starting. No idea how that happened.
 
 ## Coding Tools
-<div width: 200 px; height: 200 px;
+<div width: 1
+0 px; height: 10 px;
   <a>
     <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Logo_of_Github.jpg?20230410211349https://upload.wikimedia.org/wikipedia/commons/f/ff/Logo_of_Github.jpg?20230410211349"https://upload.wikimedia.org/wikipedia/commons/f/ff/Logo_of_Github.jpg?20230410211349>
   </a>
