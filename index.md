@@ -11,7 +11,7 @@ My Journey is somehow starting. No idea how that happened.
 
   <a href="https://github.com/KKATZENN/No-Ideas-Blog">
     <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Logo_of_Github.jpg?20230410211349https://upload.wikimedia.org/wikipedia/commons/f/ff/Logo_of_Github.jpg?      20230410211349https://upload.wikimedia.org/wikipedia/commons/f/ff/Logo_of_Github.jpg?20230410211349"> 
-  <img> src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Logo_of_Github.jpg?20230410211349=&download=" </img>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Logo_of_Github.jpg?20230410211349=&download=">
   </a>
 
 ## About Me
