@@ -29,8 +29,6 @@ Here are some fun facts about me!
   <li>I love anime</li>
   <li>Namjun Hyung is legally my father-in-law</li>
   <li>I am half chinese and half vietnamese.</li>
-    <a>
-      
-    </a>
+
 </ul>
 ## Code
