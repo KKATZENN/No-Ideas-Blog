@@ -4,7 +4,9 @@ title: Student Home
 description: Home Page
 hide: true
 ---
-
+<head>
+  <a></a>
+</head>
 My Journey is somehow starting. No idea how that happened.
 
 ## Coding Tools
