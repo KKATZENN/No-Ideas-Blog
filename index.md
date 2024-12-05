@@ -6,11 +6,12 @@ hide: true
 ---
 <div font-family: courier new;>
 <head>
+<div style=" color:red; 40px; font-weight: bold;> 
  <a href="index2.md"> 
-   <div style=" color:red; 40px; font-weight: bold;>
-    About Me
-  </div>
-</a>
+  About Me
+ </a> 
+</div>
+
 </head>
 My Journey is somehow starting. No idea how that happened.
 
