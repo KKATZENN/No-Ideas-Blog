@@ -10,12 +10,14 @@ hide: true
  </a>
 
 </head>
+
+<br>
 My Journey is somehow starting. No idea how that happened.
 
 ## Coding Tools
 
   <a href="https://github.com/KKATZENN/No-Ideas-Blog">
-        <img src="Logo_of_Github (1).jpg" width:50; height:50; alt="Github"> 
+        <img src="Logo_of_Github (1).jpg" alt="Github" style="width:50px;height:50px";> 
   </a>
 
 ## Code
