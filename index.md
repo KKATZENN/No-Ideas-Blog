@@ -12,7 +12,7 @@ head{
 }
 
 body {
-  font-size: 24px;
+  font-size: 400px;
   font-family: courier-new;
   font-color: light-blue;
 }
