@@ -8,7 +8,6 @@ hide: true
  <a href="index2.md"> 
    About Me
  </a>
-
 </head>
 
 <br>
