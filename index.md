@@ -8,15 +8,16 @@ hide: true
 head{
   font-size: 24px;
   font-family: courier-new;
-  font-color: light-blue;
+  font-color: dark-green;
 }
 
 body {
-  font-size: 400px;
+  font-size: 24px;
   font-family: courier-new;
-  font-color: light-blue;
+  font-color: dark-green;
 }
 </stlye>
+
 <head>
  <a href="index2.md"> 
    About Me
