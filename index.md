@@ -5,7 +5,7 @@ description: Home Page
 hide: true
 ---
 <style>
-head{
+head  {
   font-size: 24px;
   font-family: courier-new;
 }
@@ -24,7 +24,6 @@ body {
 
 <body>
 
-<br>
 My Journey is somehow starting. No idea how that happened.
 
 ## Coding Tools
