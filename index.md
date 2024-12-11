@@ -15,7 +15,7 @@ body {
   font-size: 24px;
   font-family: courier-new;
 }
-</stlye>
+</style>
 
  <a href="index2.md"> 
    About Me
