@@ -4,6 +4,7 @@ title: Student Home
 description: Home Page
 hide: true
 ---
+<head>
 <style>
 head  {
   font-size: 24px;
@@ -16,7 +17,6 @@ body {
 }
 </stlye>
 
-<head>
  <a href="index2.md"> 
    About Me
  </a>
