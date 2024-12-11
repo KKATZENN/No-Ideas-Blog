@@ -1,4 +1,3 @@
-<html lang="en">
 ---
 layout: base
 title: Student Home 
@@ -23,4 +22,3 @@ Kasm
 ## Code
 
 </body>
-</html>
