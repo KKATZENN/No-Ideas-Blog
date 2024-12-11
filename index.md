@@ -10,9 +10,9 @@ hide: true
    About Me
  </a>
 </head>
-
 <body>
 
+<br>
 My Journey is somehow starting. No idea how that happened.
 
 ## Coding Tools
