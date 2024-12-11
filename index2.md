@@ -2,11 +2,6 @@
 
 ## About Me
 <head>
-  <style>
-    body {
-      font-family:courier-new;
-    }
-  </style>
 </head>
 
 <body>
