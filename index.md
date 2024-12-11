@@ -4,10 +4,9 @@ title: Student Home
 description: Home Page
 hide: true
 ---
-
 <head>
  <a href="index2.md"> 
-   About Me
+   <h2>About Me</h2>
  </a>
 </head>
 <body>
@@ -16,9 +15,11 @@ hide: true
 My Journey is somehow starting. No idea how that happened.
 
 ## Coding Tools
+
 <a href="https://kasm.nighthawkcodingsociety.com/">
 Kasm
 </a>
+
 ## Code
 
 </body>
