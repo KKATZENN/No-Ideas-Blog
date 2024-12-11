@@ -7,18 +7,6 @@ hide: true
 ---
 
 <head>
-<style>
-head  {
-  font-size: 24px;
-  font-family: courier-new;
-}
-
-body {
-  font-size: 24px;
-  font-family: courier-new;
-}
-</style>
-
  <a href="index2.md"> 
    About Me
  </a>
