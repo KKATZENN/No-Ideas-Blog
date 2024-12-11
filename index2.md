@@ -1,4 +1,5 @@
 ## About Me
+<html lang="en">
 <head>
   <style>
     body {
@@ -22,3 +23,4 @@ Here are some fun facts about me!
 
 </ul>
 </body>
+</html>
