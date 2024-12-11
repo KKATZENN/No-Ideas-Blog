@@ -1,5 +1,3 @@
-<html lang="en">
-
 ## About Me
 <head>
 </head>
@@ -18,4 +16,3 @@ Here are some fun facts about me!
 
 </ul>
 </body>
-</html>
