@@ -6,15 +6,13 @@
 My name is Paul Yue.
 Here are some fun facts about me!
 
-<ul>
-  <li>I have 8 animals; 3 dogs and 5 cats</li>
+-I have 8 animals; 3 dogs and 5 cats
 <img src="Cat and dog (4984798619).jpg" alt="Cat and Dog" width="50" height="50">
-  <li>My favorite food is Tonkatsu Curry</li>
+-My favorite food is Tonkatsu Curry
 <img src="Cat and dog (4984798619).jpg" alt="Tonkatsu Curry" width="50" height="50">
-  <li>My favorite number is 9</li>
-  <li>I love anime</li>
-  <li>Namjun Hyung is legally my father-in-law</li>
-  <li>I am half chinese and half vietnamese.</li>
+-My favorite number is 9
+-I love anime
+-Namjun Hyung is legally my father-in-law
+-I am half chinese and half vietnamese.
 
-</ul>
 </body>
