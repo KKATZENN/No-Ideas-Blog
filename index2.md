@@ -1,9 +1,11 @@
 ## About Me
-
-body {
-  font-family:courier-new;
-}
-
+<head>
+  <style>
+    body {
+      font-family:courier-new;
+    }
+  </style>
+</head>
 
 <body>
 My name is Paul Yue.
