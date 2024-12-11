@@ -6,7 +6,7 @@ hide: true
 ---
 <head>
  <a href="index2.md"> 
-   <h2>About Me</h2>
+   <button>About Me</button>
  </a>
 </head>
 <body>
