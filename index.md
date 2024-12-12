@@ -5,11 +5,11 @@ description: Home Page
 hide: true
 ---
 <head>
+</head>
+ 
  <a href="index2.md"> 
    <button>About Me</button>
  </a>
-</head>
-
 
 <br>
 My Journey is somehow starting. No idea how that happened.
