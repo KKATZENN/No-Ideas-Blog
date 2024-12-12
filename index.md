@@ -9,7 +9,7 @@ hide: true
    <button>About Me</button>
  </a>
 </head>
-<body>
+
 
 <br>
 My Journey is somehow starting. No idea how that happened.
@@ -24,4 +24,3 @@ My Journey is somehow starting. No idea how that happened.
 <br>
 ## Code
 
-</body>
