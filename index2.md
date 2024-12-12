@@ -18,7 +18,7 @@ Here are some fun facts about me!
 -I have 8 animals; 3 dogs and 5 cats
 <img src="Cat and dog (4984798619).jpg" alt="Cat and Dog" width="50" height="50">
 -My favorite food is Tonkatsu Curry
-<img src="Cat and dog (4984798619).jpg" alt="Tonkatsu Curry" width="50" height="50">
+<img src="Pork cutlet curry rice of Katsuya.jpg" alt="Tonkatsu Curry" width="50" height="50">
 -My favorite number is 9
 -I love anime
 -Namjun Hyung is legally my father-in-law
