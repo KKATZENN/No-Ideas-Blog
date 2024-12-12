@@ -24,4 +24,6 @@ My Journey is somehow starting. No idea how that happened.
 
 <br>
 ## Code
-
+<a href="2023-08-21-devops_tools-verify.ipynb">
+<button> Tools Verification </button>
+</a>
