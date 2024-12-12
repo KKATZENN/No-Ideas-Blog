@@ -4,9 +4,6 @@ title: Student Home
 description: Home Page
 hide: true
 ---
-<head>
-</head>
- 
  <a href="index2.md"> 
    <button>About Me</button>
  </a>
