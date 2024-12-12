@@ -1,7 +1,4 @@
 ## About Me
-<head>
-</head>
-
 <a href="index.md">
 <button> Home </button>
 </a>
