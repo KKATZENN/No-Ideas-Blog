@@ -15,11 +15,12 @@ hide: true
 
 <br>
 My Journey is somehow starting. No idea how that happened.
+<br>
 
 ## Coding Tools
 
 <a href="https://kasm.nighthawkcodingsociety.com/">
-Kasm
+<button>Kasm</button>
 </a>
 
 ## Code
