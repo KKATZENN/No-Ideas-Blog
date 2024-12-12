@@ -8,8 +8,6 @@ hide: true
  <a href="index2.md"> 
    <button>About Me</button>
  </a>
- <a>
- </a>
 </head>
 <body>
 
