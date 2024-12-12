@@ -1,9 +1,3 @@
----
-layout: base
-title: Student Home 
-description: About Me
-hide: true
----
 ## About Me
 <head>
 <a href="index.md">
