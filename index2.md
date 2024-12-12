@@ -1,3 +1,5 @@
+<html>
+
 ## About Me
 <head>
 <a href="index.md">
@@ -5,6 +7,7 @@
 </a>
 </head>
 
+<body>
 My name is Paul Yue.
 Here are some fun facts about me!
 
@@ -18,3 +21,5 @@ Here are some fun facts about me!
 -I am half chinese and half vietnamese.
 <img src="Screenshot 2024-12-12 12.14.22 PM.png">
 
+</body>
+</html>
