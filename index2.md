@@ -5,7 +5,6 @@
 </a>
 </head>
 
-<body>
 My name is Paul Yue.
 Here are some fun facts about me!
 
@@ -18,4 +17,4 @@ Here are some fun facts about me!
 -Namjun Hyung is legally my father-in-law
 -I am half chinese and half vietnamese.
 
-</body>
+
