@@ -4,7 +4,7 @@ title: Student Home
 description: Home Page
 hide: true
 ---
- <a href="aboutme.hmtl"> 
+ <a href="aboutme.html"> 
    <button>About Me</button>
  </a>
 
