@@ -1,3 +1,9 @@
+---
+layout: base
+title: KKATZENN's Home 
+description: About Me
+hide: true
+---
 # About Me
 <a href="index.md">
 <button> Home </button>
