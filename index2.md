@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 # About Me
 <a href="index.md">
 <button> Home </button>
@@ -15,3 +17,5 @@ Here are some fun facts about me!
 -Namjun Hyung is legally my father-in-law
 -I am half chinese and half vietnamese.
 <img src="Screenshot 2024-12-12 12.14.22 PM.png" alt="Flag of Vietnam and China combined" width="50" height= "50">
+
+</html>
