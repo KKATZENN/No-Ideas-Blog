@@ -5,7 +5,7 @@ github_username: KKATZENN
 github_repo: "No-Ideas-Blog" 
 baseurl: "No-Ideas-Blog"
 future: true
-#r emote_theme: jekyll/minima
+# remote_theme: jekyll/minima
 minima:
   skin: dark
   social_links:
