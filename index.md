@@ -12,17 +12,5 @@ hide: true
 My Journey is somehow starting. No idea how that happened.
 <br>
 
-## Coding Tools
-<br>
-
-<a href="https://github.com/">
-<button> Github </button>
-</a>
-
-<a href="https://kasm.nighthawkcodingsociety.com/">
-<button>Kasm</button>
-</a>
-
-<br>
-
 ## Code
+
