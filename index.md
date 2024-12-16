@@ -15,7 +15,7 @@ My Journey is somehow starting. No idea how that happened.
 ## Coding Tools
 <br>
 
-<a href="https://github.com/KKATZENN/No-Ideas-Blog">
+<a href="https://github.com/">
 <button> Github </button>
 </a>
 
