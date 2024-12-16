@@ -7,7 +7,8 @@ hide: true
 <style>
 
 button {
-  background-color:#38a832;
+  color:white;
+  background-color:#0dd134;
   margin:10px;
   border: 1px solid green;
 }
