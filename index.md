@@ -4,6 +4,16 @@ title: Student Home
 description: Home Page
 hide: true
 ---
+<style>
+
+button {
+  background-color:#38a832;
+  margin:10px;
+  border: 1px solid green;
+}
+</style>
+
+
  <a href="aboutme.html"> 
    <button>About Me</button>
  </a>
