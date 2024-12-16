@@ -10,11 +10,12 @@ button {
 }
 </style>
 
+<body>
+
 <a href="index.md">
 <button> Home </button>
 </a>
 
-<body>
 My name is Paul Yue.
 Here are some fun facts about me!
 
