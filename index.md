@@ -15,7 +15,7 @@ button {
 </style>
 
 
- <a href="index2.md"> 
+ <a href="aboutme.html"> 
    <button>About Me</button>
  </a>
 
