@@ -12,7 +12,6 @@ My name is Paul Yue.
 Here are some fun facts about me!
 
 
-    <ul>
 -I have 8 animals; 3 dogs and 5 cats
 <img src="Cat and dog (4984798619).jpg" alt="Cat and Dog" width="50" height="50">
 -My favorite food is Tonkatsu Curry
