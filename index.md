@@ -14,11 +14,6 @@ button {
 }
 </style>
 
-
- <a href="about.md"> 
-   <button>About Me</button>
- </a>
-
 <br>
 My Journey is somehow starting. No idea how that happened.
 <br>
