@@ -52,7 +52,7 @@ function update() {
     // Check if the snake runs into itself or the wall
     if (head.x < 0 || head.x >= columns || head.y < 0 || head.y >= rows || isCollision(head)) {
         clearInterval(gameInterval);
-        alert('Game Over! Score: ' + score);
+        alert('Game Over! Reload to Play Again! Score: ' + score);
         return;
     }
 
