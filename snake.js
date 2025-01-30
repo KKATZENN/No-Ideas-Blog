@@ -19,6 +19,24 @@ let food = { x: 10, y: 10 };
 let score = 0;
 
 // Draw the snake and food
+function resetGame() {
+    snake = [
+        { x: 5, y: 5 },
+        { x: 4, y: 5 },
+        { x: 3, y: 5 }
+    ];
+    direction = 'RIGHT';
+    nextDirection = 'RIGHT';  // Prevent immediate reverse
+    food = generateFood();
+    score = 0;
+
+    clearInterval(gameInterval);  // Clear previous game loop
+    gameInterval = setInterval(() => {
+        update();
+        draw();
+    }, 100);
+}
+
 function draw() {
     // Clear the canvas
     ctx.clearRect(0, 0, canvas.width, canvas.height);
