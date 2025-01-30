@@ -109,6 +109,7 @@ document.addEventListener('keydown', (event) => {
     if (event.key === 'ArrowDown' && direction !== 'UP') direction = 'DOWN';
     if (event.key === 'ArrowLeft' && direction !== 'RIGHT') direction = 'LEFT';
     if (event.key === 'ArrowRight' && direction !== 'LEFT') direction = 'RIGHT';
+    if (event.key === `` || event.key === `Spacebar`) resetGame();
 });
 
 // Game loop to continuously update the game state
