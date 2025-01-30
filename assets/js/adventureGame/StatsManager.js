@@ -1,4 +1,4 @@
-import { javaURI, fetchOptions } from "../../../../portfolio_2025-1/assets/js/api/config.js";
+import { javaURI, fetchOptions } from "../api/config.js";
 
 /**
  * Fetches and updates the game stats UI (Balance, Chat Score, Questions Answered).
