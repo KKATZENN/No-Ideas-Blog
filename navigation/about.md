@@ -26,7 +26,7 @@ Here are some fun facts about me!
 <img></img>
 
 - I am half chinese and half vietnamese.
-<img src="Screenshot 2024-12-12 12.14.22 PM.png" alt="Flag of Vietnam and China combined" width="50" height= "50">
+<img src="/images/Screenshot 2024-12-12 12.14.22 PM.png" alt="Flag of Vietnam and China combined" style="width:50px; height:50px;">
 
 
 
