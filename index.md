@@ -23,6 +23,8 @@ My Journey is somehow starting. No idea how that happened.
 <img src="/images/IMG_0471.jpg" alt="My orange cat, Bart" style="float:left;width:200px;length:200px;">
 <img src="/images/IMG_0473.jpg" alt="My tabby cat, Seymour" style="float:right;width:200px;length:200px;">
 
+<br>
+
 ## Code
 
 <a href="aboutme.html">
