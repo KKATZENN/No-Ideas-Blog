@@ -18,11 +18,11 @@ button {
 My Journey is somehow starting. No idea how that happened.
 <br>
 
-[![My siamese cat, Charlie](/images/IMG_0125.jpg)]
-<img src="/images/IMG_0470.jpg" alt="My tortoise shell cat, Lisa" style="float:right;width:200px;length:200px;">
-<br>
-<img src="/images/IMG_0471.jpg" alt="My orange cat, Bart" style="float:left;width:200px;length:200px;">
-<img src="/images/IMG_0473.jpg" alt="My tabby cat, Seymour" style="float:right;width:200px;length:200px;">
+[![My siamese cat, Charlie.](/images/IMG_0125.jpg)]
+[![My tortoise shell cat, Lisa.](images/IMG_0470.jpg)]
+
+[![My orange/white cat, bart](images/IMG_0471.jpg)]
+[![My tabby cat, Seymour.](images/IMG_0473.jpg)]
 
 <br>
 
