@@ -18,13 +18,14 @@ let direction = 'RIGHT';
 let food = { x: 10, y: 10 };
 let score = 0;
 
-// Draw the snake and food
 function resetGame() {
     snake = [
         { x: 5, y: 5 },
         { x: 4, y: 5 },
         { x: 3, y: 5 }
     ];
+    
+// Draw the snake and food
     direction = 'RIGHT';
     nextDirection = 'RIGHT';  // Prevent immediate reverse
     food = generateFood();
