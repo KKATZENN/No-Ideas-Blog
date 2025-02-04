@@ -18,7 +18,7 @@ button {
 My Journey is somehow starting. No idea how that happened.
 <br>
 
-<img src="/images/IMG_0125.jpg" alt="My siamese cat, Charlie" style="float:left;width:200px;length:200px;">
+[![My siamese cat, Charlie](/images/IMG_0125.jpg)]
 <img src="/images/IMG_0470.jpg" alt="My tortoise shell cat, Lisa" style="float:right;width:200px;length:200px;">
 <br>
 <img src="/images/IMG_0471.jpg" alt="My orange cat, Bart" style="float:left;width:200px;length:200px;">
