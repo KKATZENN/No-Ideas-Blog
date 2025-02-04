@@ -28,6 +28,6 @@ My Journey is somehow starting. No idea how that happened.
 
 ## Code
 
-<a href="aboutme.html">
+<a href="snake.js">
 <button> SNAKE</button>
 </a>
