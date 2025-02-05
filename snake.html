@@ -70,15 +70,17 @@
         }
 
         function moveSnake() {
-            const head = { ...snake[0] };
-            head.x += direction.x;
-            head.y += direction.y;
+    const head = { ...snake[0] };
+    head.x += direction.x;
+    head.y += direction.y;
 
-            snake.unshift(head);
-            if (!isFoodCollision()) {
-                snake.pop();
-            }
-        }
+    snake.unshift(head);
+
+    // Check food collision separately
+    if (!isFoodCollision()) {
+        snake.pop();  // Only remove the tail if no food was eaten
+    }
+}
 
         function changeDirection(event) {
             switch (event.key) {
