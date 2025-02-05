@@ -12,11 +12,11 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #f4f4f4;
+            background-color: #4099e3;
         }
         canvas {
-            background-color: #000;
-            border: 1px solid #ccc;
+            background-color: #5838d9;
+            border: 1px solid #000;
         }
         #score {
             position: absolute;
@@ -133,13 +133,13 @@ function gameOver() {
 
         function drawSnake() {
             snake.forEach(segment => {
-                ctx.fillStyle = "green";
+                ctx.fillStyle = "light green";
                 ctx.fillRect(segment.x, segment.y, gridSize, gridSize);
             });
         }
 
         function drawFood() {
-            ctx.fillStyle = "red";
+            ctx.fillStyle = "orange";
             ctx.fillRect(food.x, food.y, gridSize, gridSize);
         }
 
