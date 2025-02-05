@@ -19,7 +19,7 @@ My Journey is somehow starting. No idea how that happened.
 <br>
 
 # MY CATS
-![My siamese cat, Charlie.](/images/IMG_0125.jpg)
+![My siamese cat, Charlie.](images/IMG_0125.jpg)
 ![My tortoise shell cat, Lisa.](images/IMG_0470.jpg)
 
 ![My orange/white cat, bart](images/IMG_0471.jpg)

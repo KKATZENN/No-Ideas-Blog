@@ -12,17 +12,17 @@ permalink: /about/
 
 
 - I have 8 animals; 3 dogs and 5 cats
-![A picture of cat and dog snuggling](/images/catNDogpic.jpg)
+![A picture of cat and dog snuggling](images/catNDogpic.jpg)
 
 - My favorite food is Tonkatsu Curry
-![A picture of Tonkatsu curry](/images/128px-Pork_cutlet_curry_rice_of_Katsuya.jpg)
+![A picture of Tonkatsu curry](images/128px-Pork_cutlet_curry_rice_of_Katsuya.jpg)
 
 - My favorite number is 9
 
 - I love anime
 
 - I am half chinese and half vietnamese.
-![Image of the flag of Vietnam and China](/images/Screenshot%202024-12-12%2012.14.22%20PM.png)
+![Image of the flag of Vietnam and China](images/Screenshot%202024-12-12%2012.14.22%20PM.png)
 
 
 #### My life's journey
