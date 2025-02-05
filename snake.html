@@ -87,7 +87,7 @@
 
         function drawSnake() {
             snake.forEach(segment => {
-                ctx.fillStyle = "green";
+                ctx.fillStyle = "light green";
                 ctx.fillRect(segment.x, segment.y, gridSize, gridSize);
             });
         }
@@ -99,7 +99,7 @@
         }
 
         function drawFood() {
-            ctx.fillStyle = "red";
+            ctx.fillStyle = "orange";
             ctx.fillRect(food.x, food.y, gridSize, gridSize);
         }
 
