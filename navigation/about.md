@@ -22,7 +22,7 @@ permalink: /about/
 - I love anime
 
 - I am half chinese and half vietnamese.
-!
+![Image of the flag of Vietnam and China](/images/Screenshot%202024-12-12%2012.14.22%20PM.png)
 
 
 #### My life's journey
