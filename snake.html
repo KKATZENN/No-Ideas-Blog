@@ -33,16 +33,26 @@
     <div id="score">Score: 0</div>
 
     <script>
-        const canvas = document.getElementById("gameCanvas");
+ const canvas = document.getElementById("gameCanvas");
         const ctx = canvas.getContext("2d");
 
         const gridSize = 20;
-        let snake = [{ x: 160, y: 160 }];
-        let direction = { x: gridSize, y: 0 };
-        let food = generateFood();
-        let score = 0;
+        let snake, direction, food, score;
 
-        document.addEventListener("keydown", changeDirection);
+        function resetGame() {
+            snake = [{ x: 160, y: 160 }];
+            direction = { x: gridSize, y: 0 };
+            food = generateFood();
+            score = 0;
+            document.getElementById("score").textContent = "Score: " + score;
+            gameLoop();
+        }
+
+        function generateFood() {
+            const x = Math.floor(Math.random() * (canvas.width / gridSize)) * gridSize;
+            const y = Math.floor(Math.random() * (canvas.height / gridSize)) * gridSize;
+            return { x, y };
+        }
 
         function gameLoop() {
             if (gameOver()) {
@@ -82,20 +92,17 @@
                 case "ArrowRight":
                     if (direction.x === 0) direction = { x: gridSize, y: 0 };
                     break;
+                case " ":
+                    resetGame(); // Reset the game when Spacebar is pressed
+                    break;
             }
         }
 
         function drawSnake() {
             snake.forEach(segment => {
-                ctx.fillStyle = "light green";
+                ctx.fillStyle = " light green";
                 ctx.fillRect(segment.x, segment.y, gridSize, gridSize);
             });
-        }
-
-        function generateFood() {
-            const x = Math.floor(Math.random() * (canvas.width / gridSize)) * gridSize;
-            const y = Math.floor(Math.random() * (canvas.height / gridSize)) * gridSize;
-            return { x, y };
         }
 
         function drawFood() {
@@ -127,7 +134,10 @@
             return false;
         }
 
-        gameLoop();
+        document.addEventListener("keydown", changeDirection);
+
+        // Start the game on load
+        resetGame();
     </script>
 </body>
 </html>
