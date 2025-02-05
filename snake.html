@@ -69,23 +69,27 @@
             }, 100);
         }
 
-        function moveSnake() {
+        let growSnake = false;  // Flag to indicate if the snake should grow
+
+function moveSnake() {
     const head = { ...snake[0] };
     head.x += direction.x;
     head.y += direction.y;
 
-    // Add the new head at the front of the snake
-    snake.unshift(head);
+    snake.unshift(head);  // Add the new head at the front
 
     // Check if the snake has eaten food
     if (isFoodCollision()) {
-        score += 10;
+        score += 1;
         document.getElementById("score").textContent = "Score: " + score;
-        snake.push({ x: food.x, y: food.y });  // Add a new segment (grow the snake)
         food = generateFood();  // Generate new food
+        growSnake = true;  // Set flag to grow snake
+    }
+
+    if (!growSnake) {
+        snake.pop();  // Only remove the tail if snake is not growing
     } else {
-        // If no food is eaten, remove the tail (regular movement)
-        snake.pop();
+        growSnake = false;  // Reset growth flag
     }
 }
 
@@ -97,7 +101,7 @@ function gameOver() {
         return true;
     }
 
-    // Check if the head collides with any of the body segments (excluding the new head)
+    // Check for collision with the snake's body (excluding the head)
     for (let i = 1; i < snake.length; i++) {
         if (snake[i].x === head.x && snake[i].y === head.y) {
             return true;
