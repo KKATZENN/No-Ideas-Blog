@@ -36,6 +36,6 @@ They're pretty cute right?
 
 ## Code
 
-<a href="/navigation/snake.md">
+<a href="{{site.baseurl}}/navigation/snake.md">
 <button> SNAKE </button>
 </a>
