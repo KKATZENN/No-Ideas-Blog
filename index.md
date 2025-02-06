@@ -17,7 +17,7 @@ button {
 </style>
 
 <br>
-My Journey is somehow starting. No idea how that happened. 
+My Journey is somehow starting. No idea how that happened, but we keep going. 
 <br>
 
 # MY CATS
