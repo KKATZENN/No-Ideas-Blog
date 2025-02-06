@@ -36,6 +36,6 @@ They're pretty cute right?
 
 ## Code
 
-<a href="{{site.baseurl}}/}snake.html">
+<a href="{{site.baseurl}}/snake.html">
 <button> SNAKE </button>
 </a>
