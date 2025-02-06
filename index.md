@@ -31,7 +31,7 @@ They're pretty cute right?
 
 ## Tools
 <a href="/notebooks/Foundation/B-tools_and_equipment/2023-08-22-devops_tools-verify.ipynb">
-<button> Tools verification </button>
+<button> Tools Verification </button>
 </a>
 
 ## Code
