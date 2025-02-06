@@ -36,6 +36,6 @@ They're pretty cute right?
 
 ## Code
 
-<a href="snake.html">
+<a href="snake.md">
 <button> SNAKE </button>
 </a>
