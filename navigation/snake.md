@@ -263,4 +263,3 @@ function gameOver() {
         resetGame();
     </script>
 </body>
-</html>
