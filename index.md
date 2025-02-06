@@ -30,7 +30,7 @@ They're pretty cute right?
 <br>
 
 ## Tools
-<a href="/_notebooks/Foundation/B-tools_and_equipment/2023-08-22-devops_tools-verify.ipynb">
+<a href="/notebooks/Foundation/B-tools_and_equipment/2023-08-22-devops_tools-verify.ipynb">
 <button> Tools verification </button>
 </a>
 
