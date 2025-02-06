@@ -30,14 +30,14 @@ My Journey is somehow starting. No idea how that happened, but we keep going.
 They're pretty cute right?
 
 ## Tools
-<a href="{{site.baseurl}}/notebooks/Foundation/B-tools_and_equipment/2023-08-22-devops_tools-verify.ipynb">
+<a href="/notebooks/Foundation/B-tools_and_equipment/2023-08-22-devops_tools-verify.ipynb">
 <button> Tools Verification </button>
 </a>
 
 ## Code
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-    <a href="/snake.md" style="text-decoration: none;">
+    <a href="{{site.baseurl}}/snake.md" style="text-decoration: none;">
         <div style="background-color: #0dd134; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold; border: 1px solid green;">
             SNAKE
         </div>
