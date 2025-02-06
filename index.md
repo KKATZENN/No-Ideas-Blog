@@ -30,7 +30,7 @@ My Journey is somehow starting. No idea how that happened, but we keep going.
 They're pretty cute right?
 
 ## Tools
-<a href="{site.baseurl}/notebooks/Foundation/B-tools_and_equipment/2023-08-22-devops_tools-verify.ipynb">
+<a href="{{site.baseurl}}/notebooks/Foundation/B-tools_and_equipment/2023-08-22-devops_tools-verify.ipynb">
 <button> Tools Verification </button>
 </a>
 
