@@ -17,7 +17,7 @@ button {
 </style>
 
 <br>
-My Journey is somehow starting. No idea how that happened.
+My Journey is somehow starting. No idea how that happened. 
 <br>
 
 # MY CATS
@@ -28,8 +28,6 @@ My Journey is somehow starting. No idea how that happened.
 ![My tabby cat, Seymour.](images/IMG_0473.jpg)
 
 They're pretty cute right?
-
-<br>
 
 ## Tools
 <a href="{{site.baseurl}}/notebooks/Foundation/B-tools_and_equipment/2023-08-22-devops_tools-verify.ipynb">
