@@ -8,11 +8,11 @@ hide: true
 
 button {
   color:white;
-  font-weight: bold;
+
   background-color:#0dd134;
-  padding: 10px 20px;
+
   border: 1px solid green;
-  border-radius: 5px;
+
 }
 </style>
 
