@@ -3,8 +3,7 @@ layout: base
 title: snakey
 permalink: /snakegame/
 ---
-<!DOCTYPE html>
-<html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -265,4 +264,3 @@ function gameOver() {
         resetGame();
         </script>
     </body>
- </html>
