@@ -34,7 +34,7 @@ They're pretty cute right?
 <button> Tools Verification </button>
 </a>
 
-## Code
+## Code   
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
     <a href="{{site.baseurl}}/snake.md" style="text-decoration: none;">
