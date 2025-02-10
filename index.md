@@ -36,10 +36,7 @@ They're pretty cute right?
 
 ## Code   
 
-<div style="display: flex; flex-wrap: wrap; gap: 10px;">
-    <a href="{{site.baseurl}}/snake.md" style="text-decoration: none;">
-        <div style="background-color: #0dd134; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold; border: 1px solid green;">
-            SNAKE
-        </div>
-    </a>
-</div>
+
+<a href="{{site.baseurl}}/snake.md" style="text-decoration: none;">
+<button>SNAKE</button>
+ </a>
