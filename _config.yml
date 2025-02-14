@@ -3,7 +3,7 @@ description: "Class of 2025"
 owner_name: Paul Yue
 github_username: KKATZENN
 github_repo: "No-Ideas-Blog" 
-baseurl: "No-Ideas-Blog"
+baseurl: "/No-Ideas-Blog"
 future: true
 # remote_theme: jekyll/minima
 minima:
