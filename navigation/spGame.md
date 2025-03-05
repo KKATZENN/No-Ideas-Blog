@@ -4,8 +4,6 @@ title: SP GAME
 permalink: /navigation/spGame
 ---
 
-<link rel="stylesheet" href="{{site.baseurl}}/assets/css/styles.css">
-
 <style>
 #gameContainer {
     position: relative;
@@ -90,8 +88,8 @@ canvas {
             console.log('Full origin path:', fullOrigin);
             
             // Construct the absolute paths using the full origin
-            const gameEnvPath = `${fullOrigin}/assets/js/csseRPG/spgame/GameEnv.js`;
-            const gameControlPath = `${fullOrigin}/assets/js/csseRPG/spgame/GameControl.js`;
+            const gameEnvPath = `${fullOrigin}/assets/js/spgame/GameEnv.js`;
+            const gameControlPath = `${fullOrigin}/assets/js/spgame/GameControl.js`;
             
             console.log('Loading GameEnv from:', gameEnvPath);
             const GameEnvModule = await checkModule(gameEnvPath);
