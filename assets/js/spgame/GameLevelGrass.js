@@ -11,73 +11,68 @@ class GameLevelGrass {
     let height = GameEnv.innerHeight;
 
     // Use site.baseurl for image paths
-    const img_src_grass = path + "/images/rpg/spritesheet (grass).png";
+    // Background data
+    const image_src_grasss = path + "/images/rpg/spritesheet (grass).png"; // be sure to include the path
     const image_data_grass = {
-      name: 'Grass',
-      greeting: "Welcome to the grass field! The grass is smooth, the stakes are high, and it's time for some intense tag play ",
-      src: img_src_grass,
-      pixels: { height: height , width: width }
+        name: 'Grass',
+        greeting: "Welcome to the Plains! It's a nice day to play tag, so get em'!",
+        src: image_src_grass,
+        pixels: {height: 580, width: 1038}
     };
 
-    //Data for Player
-    const sprite_src_Randy = path + "/images/rpg/player_spritesheet.png";
-    const RANDY_SCALE_FACTOR = 6; // Original value
-    this.sprite_data_Randy = {
-      id: 'Randy',
-      greeting: "Hey there, Im Randy. Ready for some tag?",
-      src: sprite_src_Randy,
-      SCALE_FACTOR: RANDY_SCALE_FACTOR,
-      STEP_FACTOR: 1000,
-      ANIMATION_RATE: 50,
-      INIT_POSITION: {x:50, y: 50},
-      pixels: {height: 384, width: 512},
-      orientation: {rows: 4, columns: 3},
-      down: {row: 0, start: 0, columns: 3 },
-      left: {row: 2, start: 0, columns: 3 },
-      right: {row: 1, start: 0, columns: 3 },
-      up: {row: 3, start: 0, columns: 3 },
-      hitbox: { widthPercentage: 1, heightPercentage: 1 },
-      keypress: { up: 87, left: 65, down: 83, right: 68 } // W=87, A=65, S=83, D=68
+
+    // Player data for Chillguy
+    const sprite_src_Randy = path + "/images/rpg/player_spritesheet.png"; // be sure to include the path
+    const RANDY_SCALE_FACTOR = 5;
+    const sprite_data_Randy = {
+        id: 'Chill Guy',
+        greeting: "Hi I am Randy, I can't wait to play tag!",
+        src: sprite_src_Randy,
+        SCALE_FACTOR: RANDY_SCALE_FACTOR,
+        STEP_FACTOR: 1000,
+        ANIMATION_RATE: 50,
+        INIT_POSITION: { x: 0, y: height - (height/CHILLGUY_SCALE_FACTOR) }, 
+        pixels: {height: 384, width: 512},
+        orientation: {rows: 3, columns: 4 },
+        down: {row: 0, start: 0, columns: 3 },
+        left: {row: 2, start: 0, columns: 3 },
+        right: {row: 1, start: 0, columns: 3 },
+        up: {row: 3, start: 0, columns: 3 },
+        hitbox: { widthPercentage: 0.45, heightPercentage: 0.2 },
+        keypress: { up: 87, left: 75, down: 83, right: 78 } // W, A, S, D
     };
 
-    // Data for NPC (Bobby) playing against the player
-    const sprite_src_Bobby = path + "/images/rpg/bobbynpc.png";
-    const BOBBY_SCALE_FACTOR = 6; // Original value
-    this.sprite_data_Bobby = {
-      id: 'Bobby',
-      greeting: "Whats up! I am bobby, lets play tag!",
-      src: sprite_src_Bobby,
-      SCALE_FACTOR: BOBBY_SCALE_FACTOR,
-      STEP_FACTOR: 1000,
-      ANIMATION_RATE: 50,
-      INIT_POSITION: { x: 200, y: 200 },
-      pixels: { height: 384, width: 512 },
-      orientation: { rows: 3, start: 0, columns: 4 },
-      hitbox: { widthPercentage: 0.45, heightPercentage: 0.2 },
-    };
 
-    //Data for the "Paul" helper NPC
-    const sprite_src_Paul = "/images/rpg/paulnpc.png";
-    const PAUL_SCALE_FACTOR = 6; // Original value
-    this.sprite_data_Paul = {
-      id: 'Paul',
-      greeting: "Hey, Im Paul, i'll increase your speed for you!",
-      src: sprite_src_Paul,
-      SCALE_FACTOR: PAUL_SCALE_FACTOR,
-      STEP_FACTOR: 1000,
-      ANIMATION_RATE: 50,
-      INIT_POSITION: {x: 1000, y: 300},
-      pixels: {height: 384, width: 512},
-      orientation: {rows: 4, columns: 3},
-      orientation: {rows: 3, start: 0, columns: 4},
-      hitbox: {widthPercentage : 0.25, heightPercentage: 0.25},
-      
-      interact: function() {
-        alert(this.greeting);
-        this.sprite_data_Randy.STEP_FACTOR *= 1.5;
-        alert("Your speed has been increased!");
-      }
-    };
+    // NPC data for Tux 
+    const sprite_src_Bobby = path + "/images/rpg/bobbynpc.png"; // be sure to include the path
+    const sprite_data_Bobby = {
+        id: 'Bobby',
+        greeting: "Dang it! You caught me!",
+        src: sprite_src_Bobby,
+        SCALE_FACTOR: 6,  // Adjust this based on your scaling needs
+        ANIMATION_RATE: 50,
+        pixels: {height: 256, width: 352},
+        INIT_POSITION: { x: (width / 2), y: (height / 2)},
+        orientation: {rows: 8, columns: 11 },
+        down: {row: 5, start: 0, columns: 3 },  // This is the stationary npc, down is default 
+        hitbox: { widthPercentage: 0.1, heightPercentage: 0.2 },
+      };
+
+
+      // NPC data for Octocat
+      const sprite_src_Paul = path + "/images/notebooks/foundation/pixil-frame-0.png"; // be sure to include the path
+      const sprite_data_Paul = {
+        id: 'Paul',
+        greeting: "Hey there!, Im Paul. I'll give you a seepd boost!",
+        src: sprite_src_Paul,
+        SCALE_FACTOR: 6,  // Adjust this based on your scaling needs
+        ANIMATION_RATE: 50,
+        pixels: {height: 301, width: 801},
+        INIT_POSITION: { x: (width / 4), y: (height / 4)},
+        orientation: {rows: 1, columns: 4 },
+        down: {row: 0, start: 0, columns: 3 },  // This is the stationary npc, down is default 
+        hitbox: { widthPercentage: 0.1, heightPercentage: 0.1 },
+    }
 
     // Initialize game objects
     const gameObjects = [
