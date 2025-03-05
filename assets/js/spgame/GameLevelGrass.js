@@ -43,7 +43,7 @@ class GameLevelGrass {
     };
 
 
-    // NPC data for Tux 
+    // NPC data for Bobby 
     const sprite_src_Bobby = path + "/images/rpg/bobbynpc.png"; // be sure to include the path
     const sprite_data_Bobby = {
         id: 'Bobby',
@@ -59,7 +59,7 @@ class GameLevelGrass {
       };
 
 
-      // NPC data for Octocat
+      // NPC data for Paul
       const sprite_src_Paul = path + "/images/notebooks/foundation/pixil-frame-0.png"; // be sure to include the path
       const sprite_data_Paul = {
         id: 'Paul',
@@ -72,7 +72,13 @@ class GameLevelGrass {
         orientation: {rows: 1, columns: 4 },
         down: {row: 0, start: 0, columns: 3 },  // This is the stationary npc, down is default 
         hitbox: { widthPercentage: 0.1, heightPercentage: 0.1 },
-    }
+    
+        interact: function() {
+          alert(this.greeting);
+          this.sprite_data_Randy.ANIMATION_RATE *= 1.5;
+          alert("Your speed has been increased!");
+        }
+      }
 
     // Initialize game objects
     const gameObjects = [
