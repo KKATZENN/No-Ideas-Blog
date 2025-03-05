@@ -87,7 +87,7 @@ canvas {
             const fullOrigin = `${window.location.origin}${baseUrl}`;
             console.log('Full origin path:', fullOrigin);
             
-            // Construct the absolute paths using the full origin
+            // Construct the absolute paths using the full origin 
             const gameEnvPath = `${fullOrigin}/assets/js/spgame/GameEnv.js`;
             const gameControlPath = `${fullOrigin}/assets/js/spgame/GameControl.js`;
             
