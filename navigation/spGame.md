@@ -59,7 +59,7 @@ canvas {
 </div>
 
 <script type="module">
-    import GameControl from '{{site.baseurl}}/assets/js/rpg/latest/GameControl.js';
+    import GameControl from '{{site.baseurl}}/assets/js/spgame/GameControl.js';
 
     const path = "{{site.baseurl}}";
 
