@@ -4,7 +4,7 @@ title: SP GAME
 permalink: /navigation/spGame
 ---
 
-<link rel="stylesheet" href="{{site.baseurl}}/assets/css/styles.css">
+<link rel="stylesheet" href="{{site.baseurl}}/assets/js/css/styles.css">
 
 <style>
 #gameContainer {
