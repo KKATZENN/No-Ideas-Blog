@@ -21,11 +21,11 @@ My Journey is somehow starting. No idea how that happened, but we keep going.
 <br>
 
 # MY CATS
-![My siamese cat, Charlie.]({{site.baseurl}}/index/images/IMG_0125.jpg)
-![My tortoise shell cat, Lisa.]({{site.baseurl}}/index/images/IMG_0470.jpg)
+![My siamese cat, Charlie.]({{site.basurl}}/images/index/IMG_0125.jpg)
+![My tortoise shell cat, Lisa.](/images/index/IMG_0470.jpg)
 
-![My orange/white cat, bart]({{site.baseurl}}/index/images/IMG_0471.jpg)
-![My tabby cat, Seymour.]({{site.baseurl}}/index/images/IMG_0473.jpg)
+![My orange/white cat, bart](/images/index/IMG_0471.jpg)
+![My tabby cat, Seymour.](/images/index/IMG_0473.jpg)
 
 They're pretty cute right?
 
