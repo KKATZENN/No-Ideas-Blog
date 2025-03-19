@@ -58,8 +58,8 @@ canvas {
 </div>
 
 <script type="module">
-    import GameEnv from './GameEnv.js';
-    import GameControl from './GameControl.js';
+    import GameEnv from '/assets/js/spgame/GameEnv.js';
+    import GameControl from '/assets/js/spgame/GameControl.js';
     
     // Function to display detailed error messages
     function showError(message, error) {
