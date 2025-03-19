@@ -58,6 +58,9 @@ canvas {
 </div>
 
 <script type="module">
+    import GameEnv from './GameEnv.js';
+    import GameControl from './GameControl.js';
+    
     // Function to display detailed error messages
     function showError(message, error) {
         const errorDiv = document.getElementById('errorMessage');
