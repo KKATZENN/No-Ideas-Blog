@@ -121,6 +121,19 @@ class GameLevelStarWars {
       down: {row: 0, start: 0, columns: 1, spin: 4},  // down is default
    };
 
+   if (obj.data.id === "Snowspeeder") {
+    this.ctx.save();
+    this.ctx.lineWidth = 10; // Much thicker border
+    this.ctx.strokeStyle = 'rgb(177, 21, 0)'; // Dark red color
+    this.ctx.strokeRect(2, 2, this.canvas.width - 4, this.canvas.height - 4); // Inset slightly to ensure visibility
+  }
+   if (obj.data.id === "Turret-Anti-Air") {
+    this.ctx.save();
+    this.ctx.lineWidth = 10; // Much thicker border
+    this.ctx.strokeStyle = 'rgba(0, 100, 0, 1)'; // Dark green color
+    this.ctx.strokeRect(2, 2, this.canvas.width - 4, this.canvas.height - 4); // Inset slightly to ensure visibility
+  }
+
     // List of objects definitions for this level
     this.classes = [
       { class: Background, data: image__data_atat },
