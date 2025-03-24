@@ -84,11 +84,14 @@ class Character extends GameObject {
             // Initialize animation properties
             this.frameIndex = 0; // index reference to current frame
             this.frameCounter = 0; // count each frame rate refresh
-            this.direction = data.direction; // Initial direction
+            this.direction = data.direction; // Initial direction is given by sprite
             this.spriteData = data;
-        } else {
+        } else if (!this.direction){
+            this.direction = "down" //defaults to down
+        }else {
             throw new Error('Sprite data is required');
         }
+        
 
         // Initialize the object's position and velocity
         this.velocity = { x: 0, y: 0 };
