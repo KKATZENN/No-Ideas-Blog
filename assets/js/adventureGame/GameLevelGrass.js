@@ -71,7 +71,8 @@ class GameLevelGrass {
         this.classes = [
             { class: GamEnvBackground, data: image_data_grass },
             { class: Player, data: sprite_data_plieruno },
-            { class: Player2, data: sprite_data_plierdoes}
+            { class: Player2, data: sprite_data_plierdoes},
+            { class: Item, data: sprite_data_item}
         ]
     }
 }
