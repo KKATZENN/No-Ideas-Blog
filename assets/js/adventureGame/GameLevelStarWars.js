@@ -1,4 +1,4 @@
-import Background from './Background.js';
+import GameEnvBackground from './GameEnvBackground.js';
 import Player from './Player.js';
 import Npc from './Npc.js';
 import Projectile from './Projectile.js';
@@ -21,11 +21,6 @@ class GameLevelStarWars {
     // Player data for snowspeeder
     const sprite_src_snowspeeder = path + "/images/gamify/snowspeeder_sprite2.png"; // be sure to include the path
     const SNOWSPEEDER_SCALE_FACTOR = 6;
-    let driftTime = 0;
-    function updateDrift() {
-      driftTime += 0.05;
-      return Math.sin(driftTime) * 0.5; //drifting up and down
-    }
     const sprite_data_snowspeeder = {
         id: 'Snowspeeder',
         greeting: "Hi I am snowspeeder, the desert wanderer. I am trying to take donwn the empire's AT-ATs!",
@@ -36,7 +31,6 @@ class GameLevelStarWars {
         INIT_POSITION: { x: 0, y: 0 }, 
         pixels: {height: 293, width: 358},
         orientation: {rows: 1, columns: 1 },
-        direction: "right",
         down: {row: 0, start: 0, columns: 1, rotate: -Math.PI/2 },
         downRight: {row: 0, start: 0, columns: 1, rotate: -3*Math.PI/4 },
         downLeft: {row: 0, start: 0, columns: 1, rotate: -Math.PI/4 },
@@ -46,10 +40,7 @@ class GameLevelStarWars {
         upLeft: {row: 0, start: 0, columns: 1, rotate: Math.PI/4 },
         upRight: {row: 0, start: 0, columns: 1, rotate: 3*Math.PI/4 },
         hitbox: { widthPercentage: 0.45, heightPercentage: 0.2 },
-        keypress: { up: 87, left: 65, down: 83, right: 68 },// W, A, S, D
-        updatePosition: function () {
-          this.INIT_POSITION.y += updateDrift();// drift up and down 
-        },
+        keypress: { up: 87, left: 65, down: 83, right: 68 }, // W, A, S, D
         reaction: function() {
           alert("We just got hit by a projectile!");
         }
@@ -69,7 +60,6 @@ class GameLevelStarWars {
       orientation: {rows: 1, columns: 3 },
       down: {row: 0, start: 0, columns: 3 },  // This is the stationary npc, down is default 
       hitbox: { widthPercentage: 0.1, heightPercentage: 0.1 },
-      keypress: { up: 38, down: 40, space:32 }, // Arrow keys
     };
 
     // Laser data, temporary sprite for testing
@@ -111,46 +101,13 @@ class GameLevelStarWars {
         down: {row: 0, start: 0, columns: 1, spin: 4},  // down is default
      };
 
-          // Laser data, temporary sprite for testing
-    const sprite_data_laser3 = {
-      id: 'AT-AT-Laser-3',
-      greeting: "Attack the snowspeeder!",
-      // define image/sprite data
-      src: sprite_src_laser,
-      pixels: {height: 500, width: 500}, // height and width of the image
-      orientation: {rows: 1, columns: 1 }, // normalized rows and columns in the sprite
-      // define size, position, adjustments for hitbox
-      SCALE_FACTOR: 60,  // Start small 
-      INIT_POSITION: { x: width - (height/TURRET_SCALE_FACTOR), y: height - .82*(height/TURRET_SCALE_FACTOR) }, // Ratios for initial position
-      hitbox: { widthPercentage: 0.1, heightPercentage: 0.2 },
-      // define animation properties
-      TRANSLATE_SCALE_FACTOR: 20, // Grow to this size at end translation
-      TRANSLATE_POSITION_RATIO: { x: 1 / 20, y: 1 / 1.9 }, // Ratios for translate position
-      TRANSLATE_SIMULATION: {miliseconds: 500 }, // 1 second
-      down: {row: 0, start: 0, columns: 1, spin: 4},  // down is default
-   };
-
-   if (obj.data.id === "Snowspeeder") {
-    this.ctx.save();
-    this.ctx.lineWidth = 10; // Much thicker border
-    this.ctx.strokeStyle = 'rgb(177, 21, 0)'; // Dark red color
-    this.ctx.strokeRect(2, 2, this.canvas.width - 4, this.canvas.height - 4); // Inset slightly to ensure visibility
-  }
-   if (obj.data.id === "Turret-Anti-Air") {
-    this.ctx.save();
-    this.ctx.lineWidth = 10; // Much thicker border
-    this.ctx.strokeStyle = 'rgba(0, 100, 0, 1)'; // Dark green color
-    this.ctx.strokeRect(2, 2, this.canvas.width - 4, this.canvas.height - 4); // Inset slightly to ensure visibility
-  }
-
     // List of objects definitions for this level
     this.classes = [
-      { class: Background, data: image__data_atat },
+      { class: GameEnvBackground, data: image__data_atat },
       { class: Player, data: sprite_data_snowspeeder },
       { class: Npc, data: sprite_data_turret },
       { class: Projectile, data: sprite_data_laser1 },
       { class: Projectile, data: sprite_data_laser2 },
-      { class: Projectile, data: sprite_data_laser3 },
     ];
   }
 }
