@@ -46,8 +46,8 @@ class GameLevelGrass {
 
         const sprite_src_plierdoes = path + ""; // be sure to include the path
         const PLIERDOES_SCALE_FACTOR = 5;
-        const sprite_data_playeruno = {
-            id: `Player 1`,
+        const sprite_data_plierdoes = {
+            id: `Player 2`,
             greeting: `I love being number 1!`,
             src: sprite_src_plierdoes,
             SCALE_FACTOR: PLIERDOES_SCALE_FACTOR,
