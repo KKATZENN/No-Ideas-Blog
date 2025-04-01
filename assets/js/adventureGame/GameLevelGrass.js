@@ -4,7 +4,7 @@ import Player2 from './Player2.js'
 import Npc from './Npc.js';
 import Quiz from './Quiz.js';
 import GameControl from './GameControl.js';
-import Item from `./Collectible.js`;
+
 
 class GameLevelGrass {
     constructer (gameEnv) {
@@ -24,8 +24,8 @@ class GameLevelGrass {
         const sprite_src_plieruno = path + ""; // be sure to include the path
         const PLIERUNO_SCALE_FACTOR = 5;
         const sprite_data_plieruno = {
-            id: `Player 1`,
-            greeting: `I love being number 1!`,
+            id: 'Player 1',
+            greeting: 'I love being number 1!',
             src: sprite_src_plieruno,
             SCALE_FACTOR: PLIERUNO_SCALE_FACTOR,
             STEP_FACTOR: 1000,
@@ -48,8 +48,8 @@ class GameLevelGrass {
         const sprite_src_plierdoes = path + ""; // be sure to include the path
         const PLIERDOES_SCALE_FACTOR = 5;
         const sprite_data_plierdoes = {
-            id: `Player 2`,
-            greeting: `I hate being number 2... :(`,
+            id: 'Player 2',
+            greeting: 'I hate being number 2... :(',
             src: sprite_src_plierdoes,
             SCALE_FACTOR: PLIERDOES_SCALE_FACTOR,
             STEP_FACTOR: 1000,
@@ -69,11 +69,11 @@ class GameLevelGrass {
             keypress: { up: 38, left: 37, down: 40, right: 39 } // Arrowkeys
         }
 
-        const sprite_src_endnpc = path + "/images/rpg/villager.png"; // be sure to include the path (no)
+        const sprite_src_endnpc = path + "/images/rpg/villager.png"; // be sure to include the path 
         const ENDNPC_SCALE_FACTOR = 5;
         const sprite_data_endnpc = {
-            id: `End Npc`,
-            greeting: `I hate you`,
+            id: 'End Npc',
+            greeting: 'I hate you',
             src: sprite_src_plierdoes,
             SCALE_FACTOR: ENDNPC_SCALE_FACTOR,
             ANIMATION_RATE: 50,
@@ -92,7 +92,22 @@ class GameLevelGrass {
             },
         }
 
-
+        const sprite_src_floweery = path + "/images/rpg/floweery.png"; // be sure to include the path 
+        const FLOWEERY_SCALE_FACTOR = 5;
+        const sprite_data_floweery = {
+            id: 'Floweery',
+            greeting: 'Hi!',
+            src: sprite_src_plierdoes,
+            SCALE_FACTOR: ENDNPC_SCALE_FACTOR,
+            ANIMATION_RATE: 50,
+            INIT_POSITION: { x: 4, y: 450},
+            pixels: {height: 384, width: 512},
+            orientation: {rows: 1, columns: 1 },
+            reaction: function() {
+                    Game.floweeriesClaimed += 1;
+                    alert('You collected a Floweery! You now have ${floweeriesClaimed} floweeries!');
+            }
+        }
 
     endGame(); {
         this.gameOver = true
@@ -110,7 +125,7 @@ class GameLevelGrass {
             { class: Player, data: sprite_data_plieruno },
             { class: Player2, data: sprite_data_plierdoes},
             { class: Npc, data: sprite_data_endnpc},
-            { class: Object, data: sprite_data_item}
+            { class: Object, data: sprite_data_floweery}
         ]
     }
 }

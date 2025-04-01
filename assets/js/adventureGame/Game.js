@@ -157,7 +157,7 @@ class Game {
             balance: this.javaURI + '/rpg_answer/getBalance/' + personId,
             chatScore: this.javaURI + '/rpg_answer/getChatScore/' + personId,
             questionsAnswered: this.javaURI + '/rpg_answer/getQuestionsAnswered/' + personId,
-            floweeriesClaimed: this.javaURI = `/rpg_answer/getFloweeriesClaimed/` +personId
+            floweeriesClaimed: this.javaURI = '/rpg_answer/getFloweeriesClaimed/' +personId
         };
 
         for (let [key, url] of Object.entries(endpoints)) {
