@@ -173,7 +173,7 @@ class GameLevelGrass {
             orientation: {rows: 1, columns: 1 },
             reaction: function() {
                     Game.floweeriesClaimed += 1;
-                    alert('You collected a Floweery! You now have ${floweeriesClaimed} floweeries!');
+                    alert(`You collected a Floweery! You now have ${floweeriesClaimed} floweeries!`);
             }
         }
 
