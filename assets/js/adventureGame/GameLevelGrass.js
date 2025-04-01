@@ -97,10 +97,10 @@ class GameLevelGrass {
         const sprite_data_floweery = {
             id: 'Floweery',
             greeting: 'Hi!',
-            src: sprite_src_plierdoes,
-            SCALE_FACTOR: ENDNPC_SCALE_FACTOR,
+            src: sprite_src_floweery,
+            SCALE_FACTOR: FLOWEERY_SCALE_FACTOR,
             ANIMATION_RATE: 50,
-            INIT_POSITION: { x: 4, y: 450},
+            INIT_POSITION: {x: Math.floor(Math.random() * 900) + 138, y: Math.floor(Math.random() * 400) + 180},
             pixels: {height: 384, width: 512},
             orientation: {rows: 1, columns: 1 },
             reaction: function() {
@@ -108,6 +108,81 @@ class GameLevelGrass {
                     alert('You collected a Floweery! You now have ${floweeriesClaimed} floweeries!');
             }
         }
+
+        const sprite_src_floweery2 = path + "/images/rpg/floweery.png"; // be sure to include the path 
+        const FLOWEERY2_SCALE_FACTOR = 5;
+        const sprite_data_floweery2 = {
+            id: 'Floweery',
+            greeting: 'Hi!',
+            src: sprite_src_floweery2,
+            SCALE_FACTOR: FLOWEERY2_SCALE_FACTOR,
+            ANIMATION_RATE: 50,
+            INIT_POSITION: {x: Math.floor(Math.random() * 900) + 138, y: Math.floor(Math.random() * 400) + 180},
+            pixels: {height: 384, width: 512},
+            orientation: {rows: 1, columns: 1 },
+            reaction: function() {
+                    Game.floweeriesClaimed += 1;
+                    alert('You collected a Floweery! You now have ${floweeriesClaimed} floweeries!');
+            }
+        }
+
+        const sprite_src_floweery3 = path + "/images/rpg/floweery.png"; // be sure to include the path 
+        const FLOWEERY3_SCALE_FACTOR = 5;
+        const sprite_data_floweery3 = {
+            id: 'Floweery',
+            greeting: 'Hi!',
+            src: sprite_src_floweery3,
+            SCALE_FACTOR: FLOWEERY3_SCALE_FACTOR,
+            ANIMATION_RATE: 50,
+            INIT_POSITION: {x: Math.floor(Math.random() * 900) + 138, y: Math.floor(Math.random() * 400) + 180},
+            pixels: {height: 384, width: 512},
+            orientation: {rows: 1, columns: 1 },
+            reaction: function() {
+                    Game.floweeriesClaimed += 1;
+                    alert('You collected a Floweery! You now have ${floweeriesClaimed} floweeries!');
+            }
+        }
+
+        const sprite_src_floweery4 = path + "/images/rpg/floweery.png"; // be sure to include the path 
+        const FLOWEERY4_SCALE_FACTOR = 5;
+        const sprite_data_floweery4 = {
+            id: 'Floweery',
+            greeting: 'Hi!',
+            src: sprite_src_floweery4,
+            SCALE_FACTOR: FLOWEERY4_SCALE_FACTOR,
+            ANIMATION_RATE: 50,
+            INIT_POSITION: {x: Math.floor(Math.random() * 900) + 138, y: Math.floor(Math.random() * 400) + 180},
+            pixels: {height: 384, width: 512},
+            orientation: {rows: 1, columns: 1 },
+            reaction: function() {
+                    Game.floweeriesClaimed += 1;
+                    alert('You collected a Floweery! You now have ${floweeriesClaimed} floweeries!');
+            }
+        }
+
+        const sprite_src_floweery5 = path + "/images/rpg/floweery.png"; // be sure to include the path 
+        const FLOWEERY5_SCALE_FACTOR = 5;
+        const sprite_data_floweery5 = {
+            id: 'Floweery',
+            greeting: 'Hi!',
+            src: sprite_src_floweery5,
+            SCALE_FACTOR: FLOWEERY5_SCALE_FACTOR,
+            ANIMATION_RATE: 50,
+            INIT_POSITION: {x: Math.floor(Math.random() * 900) + 138, y: Math.floor(Math.random() * 400) + 180},
+            pixels: {height: 384, width: 512},
+            orientation: {rows: 1, columns: 1 },
+            reaction: function() {
+                    Game.floweeriesClaimed += 1;
+                    alert('You collected a Floweery! You now have ${floweeriesClaimed} floweeries!');
+            }
+        }
+
+    summonCollectibles(); {
+        for(let i = 0; i<= 3; i++) {
+            xPlacement = Math.floor(Math.random() * 900) + 138;
+            yPlacement = Math.floor(Math.random() * 400) + 180;
+        }
+    }
 
     endGame(); {
         this.gameOver = true
@@ -125,7 +200,11 @@ class GameLevelGrass {
             { class: Player, data: sprite_data_plieruno },
             { class: Player2, data: sprite_data_plierdoes},
             { class: Npc, data: sprite_data_endnpc},
-            { class: Object, data: sprite_data_floweery}
+            { class: Object, data: sprite_data_floweery},
+            { class: Object, data: sprite_data_floweery2},
+            { class: Object, data: sprite_data_floweery3},
+            { class: Object, data: sprite_data_floweery4},
+            { class: Object, data: sprite_data_floweery5},
         ]
     }
 }
