@@ -56,3 +56,15 @@ export function getQuestionsAnswered() {
         })
         .catch(err => console.error("Error fetching questions answered:", err));
 }
+
+/**
+ * Fetches the number of floweeries that the player has claimed.
+ */
+export function getFloweeriesClaimed() {
+    fetch(`${javaURI}/rpg_answer/getfloweeriesClaimed/1`, fetchOptions)
+        .then(response => response.json())
+        .then(data => {
+        document.getElementById("floweeriesClaimed").innerText = data ?? 0;
+    })
+        .catch(err => console.error("Error fetching floweeries claimed:", err));
+}
