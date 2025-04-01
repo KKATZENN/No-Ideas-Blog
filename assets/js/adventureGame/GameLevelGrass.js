@@ -1,6 +1,6 @@
 import GamEnvBackground from './GameEnvBackground.js';
 import Player from './Player.js';
-import Player2 from '.Player2.js'
+import Player2 from './Player2.js'
 import Npc from './Npc.js';
 import Quiz from './Quiz.js';
 import GameControl from './GameControl.js';
