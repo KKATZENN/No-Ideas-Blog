@@ -4,6 +4,7 @@ import Player2 from './Player2.js'
 import Npc from './Npc.js';
 import Quiz from './Quiz.js';
 import GameControl from './GameControl.js';
+import Item from `./Collectible.js`;
 
 class GameLevelGrass {
     constructer (gameEnv) {
@@ -48,7 +49,7 @@ class GameLevelGrass {
         const PLIERDOES_SCALE_FACTOR = 5;
         const sprite_data_plierdoes = {
             id: `Player 2`,
-            greeting: `I love being number 1!`,
+            greeting: `I hate being number 2 :(`,
             src: sprite_src_plierdoes,
             SCALE_FACTOR: PLIERDOES_SCALE_FACTOR,
             STEP_FACTOR: 1000,
@@ -68,11 +69,35 @@ class GameLevelGrass {
             keypress: { up: 38, left: 37, down: 40, right: 39 } // Arrowkeys
         }
 
+        const sprite_src_endnpc = path + ""; // be sure to include the path
+        const ENDNPC_SCALE_FACTOR = 5;
+        const sprite_data_endnpc = {
+            id: `Player 2`,
+            greeting: `I hate being number 2 :(`,
+            src: sprite_src_plierdoes,
+            SCALE_FACTOR: ENDNPC_SCALE_FACTOR,
+            ANIMATION_RATE: 50,
+            INIT_POSITION: { x: 0, y: height - (height/ENDNPC_SCALE_FACTOR)},
+            pixels: {height: 384, width: 512},
+            orientation: {rows: 3, columns: 4 },
+            reaction: function() {
+                alert("Hey! Watch where you're going.")
+            },
+            interact: function() {
+                alert(this.greeting);
+
+                if (floweeriesClaimed >= 5) {
+                    
+                }
+            },
+        }
+
         this.classes = [
             { class: GamEnvBackground, data: image_data_grass },
             { class: Player, data: sprite_data_plieruno },
             { class: Player2, data: sprite_data_plierdoes},
-            { class: Item, data: sprite_data_item}
+            { class: Npc, data: sprite_data_endnpc},
+            { class: Object, data: sprite_data_item}
         ]
     }
 }

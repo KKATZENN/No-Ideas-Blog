@@ -5,7 +5,7 @@ class Collectible extends GameObject {
 
     collectFloweery() {
         if (this.collisionData.touchPoints.other.id === "player") {
-            floweeriesClaimed += 1;
+            Game.floweeriesClaimed += 1;
             alert(`You collected a Floweery! You now have ${floweeriesClaimed} floweeries!`)
         }
     }   
