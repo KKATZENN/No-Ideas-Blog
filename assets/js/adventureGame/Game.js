@@ -301,6 +301,7 @@ class Game {
             <div>Balance: <span id="balance">0</span></div>
             <div>Chat Score: <span id="chatScore">0</span></div>
             <div>Questions Answered: <span id="questionsAnswered">0</span></div>
+            <div> Floweeries claimed: <span id ="floweeriesClaimed">0</span></div>
         `;
         document.body.appendChild(statsContainer);
     }
