@@ -1,4 +1,6 @@
 import GameObject from './GameObject.js';
+import Player from './Player.js';
+import Player2 from './Player2.js';
 
 // Define non-mutable constants as defaults
 const SCALE_FACTOR = 25; // 1/nth of the height of the canvas
@@ -125,9 +127,13 @@ class Character extends GameObject {
             this.drawSprite();
             // Update the frame index for animation
             this.updateAnimationFrame();
-        } else {
+        } else if (this.classes.class = Player) {
             // Draw default red square
             this.drawDefaultSquare();
+        } else if (this.classes.class = Player2) {
+            this.drawOtherDefaultSquare();
+        } else {
+            this.drawAnythingElse();
         }
 
         // Set up the canvas dimensions and styles
@@ -188,6 +194,16 @@ class Character extends GameObject {
      */
     drawDefaultSquare() {
         this.ctx.fillStyle = 'red';
+        this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+    }
+
+    drawOtherDefaultSquare() {
+        this.ctx.fillStyle = 'green';
+        this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+    }
+
+    drawAnythingElse() {
+        this.ctx.fillStyle = 'blue';
         this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
     }
 

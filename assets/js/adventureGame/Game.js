@@ -156,7 +156,8 @@ class Game {
         const endpoints = {
             balance: this.javaURI + '/rpg_answer/getBalance/' + personId,
             chatScore: this.javaURI + '/rpg_answer/getChatScore/' + personId,
-            questionsAnswered: this.javaURI + '/rpg_answer/getQuestionsAnswered/' + personId
+            questionsAnswered: this.javaURI + '/rpg_answer/getQuestionsAnswered/' + personId,
+            floweeriesClaimed: this.javaURI = '/rpg_answer/getFloweeriesClaimed/' +personId
         };
 
         for (let [key, url] of Object.entries(endpoints)) {
@@ -301,6 +302,7 @@ class Game {
             <div>Balance: <span id="balance">0</span></div>
             <div>Chat Score: <span id="chatScore">0</span></div>
             <div>Questions Answered: <span id="questionsAnswered">0</span></div>
+            <div> Floweeries claimed: <span id ="floweeriesClaimed">0</span></div>
         `;
         document.body.appendChild(statsContainer);
     }
