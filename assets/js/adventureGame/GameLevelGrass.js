@@ -49,7 +49,7 @@ class GameLevelGrass {
         const PLIERDOES_SCALE_FACTOR = 5;
         const sprite_data_plierdoes = {
             id: `Player 2`,
-            greeting: `I hate being number 2 :(`,
+            greeting: `I hate being number 2... :(`,
             src: sprite_src_plierdoes,
             SCALE_FACTOR: PLIERDOES_SCALE_FACTOR,
             STEP_FACTOR: 1000,
@@ -69,11 +69,11 @@ class GameLevelGrass {
             keypress: { up: 38, left: 37, down: 40, right: 39 } // Arrowkeys
         }
 
-        const sprite_src_endnpc = path + ""; // be sure to include the path (no)
+        const sprite_src_endnpc = path + "/images/rpg/villager.png"; // be sure to include the path (no)
         const ENDNPC_SCALE_FACTOR = 5;
         const sprite_data_endnpc = {
-            id: `Player 2`,
-            greeting: `I hate being number 2 :(`,
+            id: `End Npc`,
+            greeting: `I hate you`,
             src: sprite_src_plierdoes,
             SCALE_FACTOR: ENDNPC_SCALE_FACTOR,
             ANIMATION_RATE: 50,
