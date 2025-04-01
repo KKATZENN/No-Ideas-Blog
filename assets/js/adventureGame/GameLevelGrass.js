@@ -69,7 +69,7 @@ class GameLevelGrass {
             keypress: { up: 38, left: 37, down: 40, right: 39 } // Arrowkeys
         }
 
-        const sprite_src_endnpc = path + ""; // be sure to include the path
+        const sprite_src_endnpc = path + ""; // be sure to include the path (no)
         const ENDNPC_SCALE_FACTOR = 5;
         const sprite_data_endnpc = {
             id: `Player 2`,
@@ -77,7 +77,7 @@ class GameLevelGrass {
             src: sprite_src_plierdoes,
             SCALE_FACTOR: ENDNPC_SCALE_FACTOR,
             ANIMATION_RATE: 50,
-            INIT_POSITION: { x: 0, y: height - (height/ENDNPC_SCALE_FACTOR)},
+            INIT_POSITION: { x: 400, y: 450},
             pixels: {height: 384, width: 512},
             orientation: {rows: 3, columns: 4 },
             reaction: function() {
@@ -87,10 +87,23 @@ class GameLevelGrass {
                 alert(this.greeting);
 
                 if (floweeriesClaimed >= 5) {
-                    
+                    endGame();
                 }
             },
         }
+
+
+
+    endGame(); {
+        this.gameOver = true
+        
+        const gameContainer = document.getElementById("gameContainer")
+        if (!gameContainer) {
+            console.error("Game container not found")
+            return
+        }
+
+    }
 
         this.classes = [
             { class: GamEnvBackground, data: image_data_grass },
