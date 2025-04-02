@@ -168,6 +168,14 @@ export class Enemy extends Character {
                 this.state.direction = "left";
             }
         }
+        
+        if (this.collisionData.touchPoints.other.id === "player") {
+            this.speed = 0;  // Stop movement
+        
+            setTimeout(() => {
+                this.speed = 3;  // Restore original speed after delay
+            }, 3000);  // Time in milliseconds
+        }
     }
 }
 
