@@ -89,6 +89,18 @@ export class Enemy extends Character {
         this.x += this.speed;
 
         this.playerBottomCollision = false;
+
+        if (this.collisionData.touchPoints.other.id === "player") {
+            if (this.collisionData.touchPoints.other.left && this.immune == 0) {  
+                this.speed = -this.speed;  // Reverse speed
+                this.x += 20;  // Move enemy back slightly
+                this.y += 30; //Move enemy upwards slightly
+            } 
+        
+            setTimeout(() => {
+                this.y -= 30;
+            }, 1000 );   
+        }
     }
 
     update() {
