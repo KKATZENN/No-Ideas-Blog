@@ -6,17 +6,8 @@ const STEP_FACTOR = 100; // 1/nth, or N steps up and across the canvas
 const ANIMATION_RATE = 1; // 1/nth of the frame rate
 const INIT_POSITION = { x: 0, y: 0 };
 
-/**
- * Player is a dynamic class that manages the data and events for objects like a player 
- * 
- * This class uses a classic Java class pattern which is nice for managing object data and events.
- * 
- * @method bindEventListeners - Binds key event listeners to handle object movement.
- * @method handleKeyDown - Handles key down events to change the object's velocity.
- * @method handleKeyUp - Handles key up events to stop the object's velocity.
- */
 
-class Player2 extends Character {
+class Player extends Character {
     /**
      * The constructor method is called when a new Player object is created.
      * 
@@ -24,9 +15,13 @@ class Player2 extends Character {
      */
     constructor(data = null, gameEnv = null) {
         super(data, gameEnv);
-        this.keypress = data?.keypress || {up: 38, left: 37, down: 40, right: 39};
+        this.keypress = data?.keypress || {up: 87, left: 65, down: 83, right: 68};
         this.pressedKeys = {}; // active keys array
         this.bindMovementKeyListners();
+        this.gravity = data.GRAVITY || false;
+        this.acceleration = 0.001;
+        this.time = 0;
+        this.moved = false;
     }
 
     /**
@@ -91,18 +86,36 @@ class Player2 extends Character {
         } else if (this.pressedKeys[this.keypress.up]) {
             this.velocity.y -= this.yVelocity;
             this.direction = 'up';
+            this.moved = true;
         } else if (this.pressedKeys[this.keypress.left]) {
             this.velocity.x -= this.xVelocity;
             this.direction = 'left';
+            this.moved = true;
         } else if (this.pressedKeys[this.keypress.down]) {
             this.velocity.y += this.yVelocity;
             this.direction = 'down';
+            this.moved = true;
         } else if (this.pressedKeys[this.keypress.right]) {
             this.velocity.x += this.xVelocity;
             this.direction = 'right';
+            this.moved = true;
+        } else{
+            this.moved = false;
         }
     }
-
+    update() {
+        super.update();
+        if(!this.moved){
+            if (this.gravity) {
+                    this.time += 1;
+                    this.velocity.y += 0.5 + this.acceleration * this.time;
+                }
+            }
+        else{
+            this.time = 0;
+        }
+        }
+        
     /**
      * Overrides the reaction to the collision to handle
      *  - clearing the pressed keys array
@@ -119,4 +132,4 @@ class Player2 extends Character {
 
 }
 
-export default Player2;
+export default Player;

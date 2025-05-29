@@ -1,6 +1,4 @@
 import GameObject from './GameObject.js';
-import Player from './Player.js';
-import Player2 from './Player2.js';
 
 // Define non-mutable constants as defaults
 const SCALE_FACTOR = 25; // 1/nth of the height of the canvas
@@ -62,8 +60,9 @@ class Character extends GameObject {
         this.canvas.width = data.pixels?.width || PIXELS.width;
         this.canvas.height = data.pixels?.height || PIXELS.height;
         this.hitbox = data?.hitbox || {};
-        this.ctx = this.canvas.getContext('2d');
+        this.ctx = this.canvas.getContext('2d', { willReadFrequently: true });
         document.getElementById("gameContainer").appendChild(this.canvas);
+        this.canvas.style = "image-rendering: pixelated;";
 
         // Set initial object properties 
         this.x = 0;
@@ -77,9 +76,11 @@ class Character extends GameObject {
         this.animationRate = data.ANIMATION_RATE || ANIMATION_RATE;
         this.position = data.INIT_POSITION || INIT_POSITION;
         
+        // Always set spriteData, even if there's no sprite sheet
+        this.spriteData = data;
+        
         // Check if sprite data is provided
         if (data && data.src) {
-    
             // Load the sprite sheet
             this.spriteSheet = new Image();
             this.spriteSheet.src = data.src;
@@ -88,9 +89,6 @@ class Character extends GameObject {
             this.frameIndex = 0; // index reference to current frame
             this.frameCounter = 0; // count each frame rate refresh
             this.direction = 'down'; // Initial direction
-            this.spriteData = data;
-        } else {
-            //throw new Error('Sprite data is required');
         }
 
         // Initialize the object's position and velocity
@@ -98,7 +96,6 @@ class Character extends GameObject {
 
         // Set the initial size and velocity of the object
         this.resize();
-
     }
 
 
@@ -127,13 +124,9 @@ class Character extends GameObject {
             this.drawSprite();
             // Update the frame index for animation
             this.updateAnimationFrame();
-        } else if (this.classes.class = Player) {
+        } else {
             // Draw default red square
             this.drawDefaultSquare();
-        } else if (this.classes.class = Player2) {
-            this.drawOtherDefaultSquare();
-        } else {
-            this.drawAnythingElse();
         }
 
         // Set up the canvas dimensions and styles
@@ -193,17 +186,7 @@ class Character extends GameObject {
      * Draws a default red square on the canvas.
      */
     drawDefaultSquare() {
-        this.ctx.fillStyle = 'red';
-        this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
-    }
-
-    drawOtherDefaultSquare() {
-        this.ctx.fillStyle = 'green';
-        this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
-    }
-
-    drawAnythingElse() {
-        this.ctx.fillStyle = 'blue';
+        this.ctx.fillStyle = this.data?.fillStyle || 'red';
         this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
     }
 
@@ -216,7 +199,9 @@ class Character extends GameObject {
         this.canvas.style.position = 'absolute';
         this.canvas.style.left = `${this.position.x}px`;
         this.canvas.style.top = `${this.gameEnv.top + this.position.y}px`;
-        this.canvas.style.zIndex = this.data?.zIndex || 0;
+        
+        // Use the zIndex from data if provided, otherwise use a default of 10
+        this.canvas.style.zIndex = (this.data && this.data.zIndex !== undefined) ? this.data.zIndex : "10";
     }
 
     /**
@@ -265,7 +250,15 @@ class Character extends GameObject {
      * This method changes the object's position based on its velocity and ensures that the object
      * stays within the boundaries of the canvas.
      */
-    move() {
+    move(x, y) {
+
+        if(x != undefined){
+            this.position.x = x;
+        }
+        if(x != undefined){
+            this.position.y = y;
+        }
+        
         // Update or change position according to velocity events
         this.position.x += this.velocity.x;
         this.position.y += this.velocity.y;
@@ -314,9 +307,9 @@ class Character extends GameObject {
         // Recalculate the object's size based on the new scale
         this.size = this.scale.height / this.scaleFactor; 
 
-        // Recalculate the object's velocity steps based on the new scale
-        this.xVelocity = this.scale.width / this.stepFactor;
-        this.yVelocity = this.scale.height / this.stepFactor;
+        // Recalculate the object's velocity steps based on the new scale (3x faster)
+        this.xVelocity = (this.scale.width / this.stepFactor) * 3;
+        this.yVelocity = (this.scale.height / this.stepFactor) * 3;
 
         // Set the object's width and height to the new size (object is a square)
         this.width = this.size;

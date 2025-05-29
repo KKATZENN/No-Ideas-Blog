@@ -57,7 +57,7 @@ class GameEnv {
      */
     setCanvas() {
         this.canvas = document.getElementById('gameCanvas');
-        this.ctx = this.canvas.getContext('2d');
+        this.ctx = this.canvas.getContext('2d', { willReadFrequently: true });
     }
 
     /**
@@ -89,18 +89,12 @@ class GameEnv {
         this.canvas.style.top = `${this.top}px`;
     }
 
-    /**
-     * Resizes the game environment by re-creating it.
-     */
+
     resize() {
         this.create();
     }
 
-    /**
-     * Clears the canvas.
-     * 
-     * This method clears the entire canvas, making it ready for the next frame.
-     */
+ 
     clear() {
         this.ctx.clearRect(0, 0, this.innerWidth, this.innerHeight);
     }

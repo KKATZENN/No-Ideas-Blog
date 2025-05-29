@@ -1,4 +1,4 @@
-// GameControl.js
+// GameControl.js with improved level transition handling
 import GameLevel from "./GameLevel.js";
 
 class GameControl {
@@ -18,19 +18,50 @@ class GameControl {
         this.currentLevelIndex = 0;
         this.gameLoopCounter = 0;
         this.isPaused = false;
-        this.exitKeyListener = this.handleExitKey.bind(this);
+        this.nextLevelKeyListener = this.handleNextLevelKey.bind(this);
         this.gameOver = null; // Callback for when the game is over 
         this.savedCanvasState = []; // Save the current levels game elements 
+        
+        // Capture all global interactions for cleaning up during transitions
+        this.globalInteractionHandlers = new Set();
     }
 
-    /**
-     * Starts the game by 
-     * 1. Adding an exit key listener
-     * 2. Transitioning to the first level
-     */
+    
     start() {
         this.addExitKeyListener();
         this.transitionToLevel();
+    }
+
+    /**
+     * Register a global interaction handler that will be cleaned up during transitions
+     * @param {Object} handler - Object with handleKeyDownBound and handleKeyUpBound methods
+     */
+    registerInteractionHandler(handler) {
+        if (handler) {
+            this.globalInteractionHandlers.add(handler);
+        }
+    }
+
+    /**
+     * Unregister a global interaction handler
+     * @param {Object} handler - Handler to remove
+     */
+    unregisterInteractionHandler(handler) {
+        if (handler) {
+            this.globalInteractionHandlers.delete(handler);
+        }
+    }
+
+    /**
+     * Clean up all registered global interaction handlers
+     */
+    cleanupInteractionHandlers() {
+        this.globalInteractionHandlers.forEach(handler => {
+            if (handler.removeInteractKeyListeners) {
+                handler.removeInteractKeyListeners();
+            }
+        });
+        this.globalInteractionHandlers.clear();
     }
 
     /**
@@ -40,6 +71,9 @@ class GameControl {
      * 3. Starting the game loop
      */ 
     transitionToLevel() {
+        // Clean up any lingering interaction handlers
+        this.cleanupInteractionHandlers();
+
         const GameLevelClass = this.levelClasses[this.currentLevelIndex];
         this.currentLevel = new GameLevel(this);
         this.currentLevel.create(GameLevelClass);
@@ -92,7 +126,12 @@ class GameControl {
         } else {
             alert("All levels completed.");
         }
+        
+        // Clean up any lingering interaction handlers
+        this.cleanupInteractionHandlers();
+        
         this.currentLevel.destroy();
+        
         // Call the gameOver callback if it exists
         if (this.gameOver) {
             this.gameOver();
@@ -106,12 +145,17 @@ class GameControl {
      * Exit key handler to end the current level
      * @param {*} event - The keydown event object
      */
-    handleExitKey(event) {
-        if (event.key === 'Escape') {
-            this.currentLevel.continue = false;
+    handleNextLevelKey(event) {
+        if (event.key.toLowerCase() === 't' || event.key.toLowerCase() === 'Escape') {
+            if (this.currentLevelIndex < this.levelClasses.length - 1) {
+                console.log("Hotkey 't' pressed: Transitioning to next level.");
+                this.currentLevel.continue = false;
+            } else {
+                alert("🎉 You're on the final level! There are no more levels to transition to.");
+            }
         }
     }
-
+    
     // Helper method to add exit key listener
     addExitKeyListener() {
         document.addEventListener('keydown', this.exitKeyListener);
@@ -169,6 +213,9 @@ class GameControl {
         this.removeExitKeyListener();
         this.saveCanvasState();
         this.hideCanvasState();
+        
+        // Also clean up interaction handlers
+        this.cleanupInteractionHandlers();
      }
 
      /**
