@@ -1,12 +1,12 @@
-import GameEnv from '../adventureGame/GameEngine/GameEnv.js';
-import Background from '../adventureGame/GameEngine/Background.js';
+import GameEnv from './GameEngine/GameEnv.js';
+import Background from './GameEngine/Background.js';
 import PlayerOne from '../adventureGame/PlayerOne.js';
 import PlayerTwo from '../adventureGame/PlayerTwo.js';
 import NpcFrog from '../adventureGame/NpcFrog.js';
 import Mantaray from '../adventureGame/MantaRay.js';
 import DialogueSystem from '../adventureGame/GameEngine/DialogueSystem.js';
 
-class GameLevelDifferentWater {
+class GameLevelNoIdea {
   constructor(path) {
     const header = document.querySelector('header');
     const footer = document.querySelector('footer');
@@ -255,4 +255,4 @@ class GameLevelDifferentWater {
 
 }
 
-export default GameLevelDifferentWater;
+export default GameLevelNoIdea;
