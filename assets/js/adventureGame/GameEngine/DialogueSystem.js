@@ -1,20 +1,20 @@
-// DialogueSystem.js - Fixed version that addresses both issues
-// 1. Unique instances for each NPC to prevent button conflicts
-// 2. Works with Eye of Ender collection
-
 class DialogueSystem {
   constructor(options = {}) {
     // Default dialogue arrays
     this.dialogues = options.dialogues || [
-      "You've come far, traveler. The skies whisper your name.",
-      "The End holds secrets only the brave dare uncover.",
-      "Retrieve the elytra and embrace your destiny!"
+      "Hey!",
+      "pretend im doing small talk, plz",
+      "How are you doing?",
+      "Quieres aprender espanol? Tomar una clase."
     ];
     
+    // Create a unique ID for this dialogue system
     this.id = options.id || "dialogue_" + Math.random().toString(36).substr(2, 9);
     
+    // Track the last shown dialogue to avoid repetition
     this.lastShownIndex = -1;
     
+    // Create necessary DOM elements
     this.dialogueBox = null;
     this.dialogueText = null;
     this.closeBtn = null;
@@ -44,12 +44,12 @@ class DialogueSystem {
       transform: "translateX(-50%)",
       padding: "20px",
       maxWidth: "80%",
-      background: "rgba(0, 0, 0, 0.85)",
+      background: "rgb(31, 82, 124)",
       color: "#00FFFF",
       fontFamily: "'Press Start 2P', cursive, monospace",
       fontSize: "14px",
       textAlign: "center",
-      border: "2px solid #4a86e8",
+      border: "2px solidrgb(156, 190, 245)",
       borderRadius: "12px",
       zIndex: "9999",
       boxShadow: "0 0 20px rgba(0, 255, 255, 0.7)",

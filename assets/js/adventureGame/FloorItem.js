@@ -11,6 +11,7 @@ class FloorItem {
     }
 
     initialize() {
+        // Add styles for floor items
         const style = document.createElement('style');
         style.textContent = `
             .floor-item {
@@ -46,13 +47,14 @@ class FloorItem {
             <div class="item-name">${this.item.name}</div>
         `;
         
+        // Position relative to game container
         const gameContainer = document.getElementById('gameContainer');
         if (gameContainer) {
             this.element.style.position = 'absolute';
             this.element.style.left = `${this.x}px`;
             this.element.style.top = `${this.y}px`;
             this.element.style.zIndex = '1000'; // Make sure it's above other elements
-            this.element.style.transform = 'translate(-50%, -50%)'; 
+            this.element.style.transform = 'translate(-50%, -50%)'; // Center the item
             gameContainer.appendChild(this.element);
             console.log('Added floor item to game container at:', this.x, this.y);
         } else {

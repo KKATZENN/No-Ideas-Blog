@@ -14,12 +14,16 @@ export class GameEnvBackground extends GameObject {
         }
     }
 
-    
+    /** For primary background, update is the same as draw
+     * 
+     */
     update() {
         this.draw();
     }
 
-    
+    /** This method draws to GameEnv context, primary background
+     * 
+     */
     draw() {
         const ctx = this.gameEnv.ctx;
         const width = this.gameEnv.innerWidth;
