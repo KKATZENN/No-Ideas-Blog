@@ -91,4 +91,4 @@ class GameLevel {
   }
 }
 
-export default GameLevel
+export default GameLevel;
