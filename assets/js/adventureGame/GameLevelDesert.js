@@ -212,9 +212,10 @@ class GameLevelDesert {
               
               dialogue.showRandomDialogue();
             },
-
-            interact: function() {
-              this.dialogueSystem.showDialogue(
+          interact: function() {
+            this.DialogueSystem = new DialogueSystem();
+            
+            this.DialogueSystem.showDialogue(
                   "Do you wish to enter THE WATER?",
                   "Snake",
                   this.spriteData.src
@@ -223,7 +224,7 @@ class GameLevelDesert {
               // Add buttons directly to the dialogue
               this.dialogueSystem.addButtons([
                   {
-                      text: "Enter Portal",
+                      text: "THE WATER",
                       primary: true,
                       action: () => {
                           this.dialogueSystem.closeDialogue();
